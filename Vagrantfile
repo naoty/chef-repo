@@ -7,20 +7,24 @@ Vagrant.configure(2) do |config|
       yum
       git
       ruby
+      openjdk
       redis
       mysql
       imagemagick
     )
     chef.json = {
-      ruby: {
-        version: "2.0.0-p353"
-      },
       mysql: {
         repository: "mysql-community-release-el6-5.noarch.rpm",
         socket: "/tmp/mysql.sock"
       },
+      openjdk: {
+        version: "1.7.0"
+      },
       redis: {
         version: "2.8.13"
+      },
+      ruby: {
+        version: "2.0.0-p353"
       }
     }
   end
@@ -29,6 +33,6 @@ Vagrant.configure(2) do |config|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 
-  # `vagrant up`時はコメントアウト
+  # Comment out a below line when `vagrant up`
   config.vbguest.auto_update = true
 end
