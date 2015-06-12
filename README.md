@@ -10,8 +10,10 @@ $ vagrant up
 - [x] yum update
 - [x] git
 - [x] Ruby (rbenv, ruby-build)
+- [x] Open JDK 1.7
 - [x] MySQL 5.6
 - [x] Redis
+- [x] Solr
 - [x] ImageMagick
 
 ## Requirements
