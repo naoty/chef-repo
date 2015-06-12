@@ -1,0 +1,7 @@
+{
+    "id": "vagrant",
+    "user": "vagrant",
+    "group": "vagrant",
+    "home": "/home/vagrant",
+    "shell": "/bin/bash"
+}
