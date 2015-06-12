@@ -8,8 +8,9 @@ Vagrant.configure(2) do |config|
       git
       ruby
       openjdk
-      redis
       mysql
+      redis
+      solr
       imagemagick
     )
     chef.json = {
@@ -25,6 +26,9 @@ Vagrant.configure(2) do |config|
       },
       ruby: {
         version: "2.0.0-p353"
+      },
+      solr: {
+        version: "4.7.1"
       }
     }
   end
